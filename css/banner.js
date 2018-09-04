@@ -122,14 +122,21 @@ function banner_lr(imgs,dots,banner,leftBtn,rightBtn,widths,activeClass,second=2
 // Tab(lis,card);
 function Tab(lis,card){
     for(let i=0;i<lis.length;i++){
+        //3.进行鼠标移入每个li时的操作
         lis[i].onmouseover=function(){
-            // for(let j=0;j<son.length;j++){
-            // 	son[j].style.display="none";
-            // }
-            son[i].style.display="block";
+            //4.其余子元素消失
+            for(let j=0;j<lis.length;j++){
+                //其余子元素消失
+                card[j].style.display="none";
+            }
+            //5.当前子元素出现
+            card[i].style.display="block";
         }
         lis[i].onmouseout=function(){
-            son[i].style.display="none";
+            for(let j=0;j<lis.length;j++){
+                //其余子元素消失
+                card[j].style.display="none";
+            }
         }
     }
 }
@@ -241,4 +248,47 @@ function banner_dj(imgs,dots,banner,leftBtn,rightBtn,widths,activeClass="lie"){
         }
     }
 }
+}
+
+
+//滑动
+function hd(lz,ry,list,w){
+    let times=0;
+    console.log(lz,ry,list,w);
+    lz[0].onclick=function(){
+        times++;
+        if(times==3){
+            times=2;
+        }
+        list.style.transform=`translate(-${w*times}px)`;
+    }
+    ry[0].onclick=function(){
+        times--;
+        if(times==-1){
+            times=0;
+        }
+        list.style.transform=`translate(-${w*times}px)`;
+    }
+}
+
+
+
+
+function hd_l(lz,ry,list,w){
+    let times=0;
+    console.log(lz,ry,list,w);
+    lz[0].onclick=function(){
+        times++;
+        if(times==2){
+            times=1;
+        }
+        list.style.transform=`translate(-${w*times}px)`;
+    }
+    ry[0].onclick=function(){
+        times--;
+        if(times==-1){
+            times=0;
+        }
+        list.style.transform=`translate(-${w*times}px)`;
+    }
 }

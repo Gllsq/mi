@@ -2,7 +2,7 @@
 * @Author: hp
 * @Date:   2018-08-03 08:42:20
 * @Last Modified by:   hp
-* @Last Modified time: 2018-09-04 00:36:31
+* @Last Modified time: 2018-09-04 23:12:36
 */
 *{
 	margin: 0;
@@ -220,6 +220,96 @@ input.submit:hover{
 .banner .list{
 	width: 100%;
 	height: 30px;
+	position: relative;
+}
+.banner .list .son{
+	display: none;
+    position: absolute;
+    left: 234px;
+    top: -14px;
+    z-index: 999;
+    height: 458px;
+    border: 1px solid #e0e0e0;
+    border-left: 0;
+    background: #fff;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.18);
+}
+.banner .list:nth-child(1) .son{
+	width: 992px;
+	height: 458px;
+}
+.banner .list:nth-child(2) .son{
+	width: 992px;
+	height: 458px;
+	margin-top: -45px;
+}
+.banner .list:nth-child(3) .son{
+	width: 992px;
+	height: 458px;
+	margin-top: -90px;
+}
+.banner .list:nth-child(4) .son{
+	width: 724px;
+	height: 458px;
+	margin-top: -135px;
+}
+.banner .list:nth-child(5) .son{
+	width: 500px;
+	height: 458px;
+	margin-top: -180px;
+}
+.banner .list:nth-child(6) .son{
+	width: 300px;
+	height: 458px;
+	margin-top: -225px;
+}
+.banner .list:nth-child(7) .son{
+	width: 724px;
+	height: 458px;
+	margin-top: -270px;
+}
+.banner .list:nth-child(8) .son{
+	width: 500px;
+	height: 458px;
+	margin-top: -315px;
+}
+.banner .list:nth-child(9) .son{
+	width: 300px;
+	height: 458px;
+	margin-top: -360px;
+}
+.banner .list:nth-child(10) .son{
+	width: 992px;
+	height: 458px;
+	margin-top: -405px;
+}
+.banner .list .son .clear{
+	width: 240px;
+	height: 100%;
+    margin: 0;
+    padding: 2px 0;
+    list-style-type: none;
+    float: left;
+}
+.banner .list .clear .son-l{
+	position: relative;
+    float: left;
+    width: 100%;
+    height: 76px;
+    margin-left: 20px;
+}
+.banner .list .clear .son-l .li-s{
+	position: absolute;
+	top: 18px;
+	width: 40px;
+	height: 40px;
+}
+.banner .list .clear .son-l .ext{
+	font-size: 16px;
+	color: #333;
+	position: absolute;
+	top: 30px;
+	left: 45px;
 }
 .banner .list:hover{
 	background-color: orange;
@@ -262,7 +352,7 @@ input.submit:hover{
 	bottom: 0;
 	margin: auto 0;
 	position: absolute;
-	z-index: 999;
+	z-index: 998;
 }
 .banner .leftBtn:hover{
 	background-position: 166px;
@@ -277,7 +367,7 @@ input.submit:hover{
 	bottom: 0;
 	margin: auto 0;
 	position: absolute;
-	z-index: 999;
+	z-index: 998;
 }
 .banner .rightBtn:hover{
 	background-position: 124px;
@@ -288,7 +378,7 @@ input.submit:hover{
 	position: absolute;
 	margin-left: 1076px;
 	margin-top: 430px;
-	z-index: 999;
+	z-index: 998;
 }
 .banner .point ld{
 	width: 10px;
@@ -440,30 +530,153 @@ ul li .top:nth-child(5) img{
 }
 .first a{
 	color: #333;
+	float: left;
 }
-.first img{
-	width: 73px;
-	height: 24px;
-	float: right;
-	margin-top: 30px;
+.first .bottn_1{
+    width:64px;
+    height:20px;
+    text-align: center;
+    line-height: 20px;
+    float: right;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.first .bottn_1 .lz_f{
+    width:30px;
+    height:100%;
+    border:1px solid #333;
+    float: left;
+    background: #ccc;
+}
+.first .bottn_1 .ry_g{
+    width:30px;
+    height:100%;
+    border:1px solid #333;
+    float: left;
+    background: #ccc;
 }
 .mi{
 	width: 1226px;
 	height: 340px;
 	margin: 0 auto;
 }
-.mi .box{
+.mi .zb{
 	width: 234px;
-	height: 340px;
-	float: left;
-	margin-right: 14px;
-}
-.mi .box:nth-child(5){
-	margin-right: 0;
-}
-.mi .box img{
-	width: 100%;
 	height: 100%;
+	background: #fafafa;
+	border-top: 1px solid #e53935;
+	float: left;
+}
+.mi .zb .sj{
+	font-size: 21px;
+    color: #ef3a3b;
+    padding-top: 15px;
+    text-align: center;
+    margin-top: 40px;
+}
+.mi .zb img{
+	margin-top: 40px;
+	margin-left: 100px;
+}
+.mi .zb .sub{
+	color: rgba(0,0,0,0.54);
+    font-size: 15px;
+    text-align: center;
+    margin-top: 20px;
+}
+.mi .zb .coun{
+	width: 168px;
+    margin: 28px auto 0;
+}
+.mi .zb .coun .box{
+	width: 46px;
+	height: 46px;
+	background: #605751;
+	color: #fff;
+	font-size: 24px;
+	line-height: 46px;
+	text-align: center;
+	float: left;
+}
+.mi .zb .coun .dosh{
+	width: 15px;
+	height: 46px;
+	float: left;
+	color: #605751;
+	font-size: 28px;
+	line-height: 46px;
+}
+.mi .tobt{
+	width: 978px;
+	height: 340px;
+	margin-left: 248px;
+	overflow: hidden;
+}
+.mi .milist{
+	width: 1986px;
+	height: 340px;
+	margin-top: 0;
+	transition: all 1s;
+}
+.mi .milist .sit{
+	width: 234px;
+	height: 100%;
+	background: #fafafa;
+	margin-right: 14px;
+	float: left;
+	position: relative;
+	border-top: 1px solid #ffac13;
+}
+.mi .milist .sit img{
+	width: 160px;
+	height: 160px;
+	margin-top: 50px;
+	margin-left: 30px;
+}
+.mi .milist .sit .title{
+	margin: 0 20px 3px;
+    font-size: 14px;
+    font-weight: 400;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
+}
+.mi .milist .sit .title a{
+	color: #333;
+}
+.mi .milist .sit p{
+	height: 18px;
+    margin: 0 20px 12px;
+    font-size: 12px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #b0b0b0;
+    text-align: center;
+}
+.mi .milist .sit .pice{
+	margin: 0;
+    color: #ff6709;
+    font-size: 16px;
+}
+.mi .milist .sit .pice del{
+	color: #b0b0b0;
+	text-decoration: line-through;
+}
+.mi .milist .tps{
+	background-color: #e53935;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 2;
+    width: 64px;
+    height: 20px;
+    margin-left: -32px;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    color: #fff;
 }
 .one{
 	width: 1226px;
@@ -951,48 +1164,71 @@ ul li .top:nth-child(5) img{
 }
 .groom a{
 	color: #333;
+	float: left;
 }
-.groom img{
-	width: 73px;
-	height: 24px;
-	float: right;
-	margin-top: 30px;
+.groom .bottn{
+    width:64px;
+    height:20px;
+    float: right;
+    text-align: center;
+    line-height: 20px;
+    margin-top: 30px;
+    cursor: pointer;
 }
-.you{
+.groom .bottn .lz{
+    width:30px;
+    height:100%;
+    border:1px solid #333;
+    float: left;
+    background: #ccc;
+}
+.groom .bottn .ry{
+    width:30px;
+    height:100%;
+    border:1px solid #333;
+    float: left;
+    background: #ccc;
+}
+.hz{
 	width: 1226px;
 	height: 340px;
 	margin: 0 auto;
+	overflow: hidden;
 }
-.you .box{
+.hz .you{
+	width: 3720px;
+	height: 340px;
+	margin: 0 auto;
+	transition: all 1s;
+
+}
+.hz .you .box{
 	width: 234px;
 	height: 340px;
 	float: left;
 	background: #fff;
 	margin-right: 14px;
 }
-.you .box:hover{
+.hz .you .box:hover{
 	box-shadow: 0 15px 20px rgba(0, 0, 0, 0.1);
 	margin-top: -1px;
 }
-.you .box:nth-child(5){
-	margin-right: 0;
-}
-.you .box img{
+.hz .you .box img{
 	width: 150px;
 	height: 150px;
 	margin-top: 40px;
 	margin-left: 40px;
 }
-.you .box p{
+.hz .you .box p{
 	text-align: center;
 	margin-top: 15px;
 }
-.you .box .money{
+.hz .you .box .money{
 	text-align: center;
 	color: #ff6700;
 	margin-top: 20px;
 }
-.you .box h5{
+.hz .you .box h5{
 	text-align: center;
 	color: #bdb0c9;
 	margin-top: 15px;
@@ -1051,6 +1287,7 @@ ul li .top:nth-child(5) img{
 	background:#f5f5f5;
 	width: 100%;
 	height: 498px;
+	margin-top: -50px;
 }
 .elevteen .container{
 	width: 1226px;
@@ -1217,7 +1454,6 @@ border-top: 1px solid #2196f3;
 	height: 58px;
 	margin: 0 auto;
 	font-size: 26px;
-	margin-top:450px;
 	line-height: 80px;
 }
 .screen a{
